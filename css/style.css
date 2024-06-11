@@ -22,6 +22,13 @@ body {
     /*colocamos a cima o no repeat para que com apenas uma imagem nos conseguissemos prencher todo o espaço do body porem , esta imagem está bem grande e utilizamo o background-size : cover para que ele cubra a tela inteira*/;
 }
 
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
 
 main {
     height: 100vh; 

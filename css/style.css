@@ -26,8 +26,13 @@ iframe#tela {
     position: relative;
     top: 80px;
     left: 22px;
-    width: 269px;
+    width: 267px;
     height: 471px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
 }
 
 main {
@@ -51,3 +56,32 @@ section#telefone {
     background: url('../imagens/frame-iphone.png') no-repeat;
     /*Para colocar o iphone neste utilizamos o background url e colocamos o no repeat para que a imagem nao se repita para prencher todo o espaço desta <section>*/
 }
+
+/*Alinhamos para o centro da tela e deixamos com um padding agradavel aos olhos*/
+section#redes-sociais {
+    text-align: center;
+    padding: 20px;
+}
+
+/*Nesta parte utilizamos o hover para animar quando passamos o mouse em cima , colocamos :
+- border : para quando passarmos aparecer uma borda
+- transformarmos esta borda como parte da boxe com o box sizing: border box 
+- utilizamos o transforme:translate para que quando passarmos o mouse em cima , a box se movimente para cima 
+- configuramos a sombra pq ja que a box vai andar a sombra tambem deve andar
+- utilizamos o transition transforme , com um tempo de 3s e uma borda animada de 1s , o transition transforme foi usado neste caso para que seja uma transição , do antes para o depois do hover , porem conseguimos configurar para que fique de forma mais passiva aos olhos*/
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.646);
+    box-sizing: border-box;
+    transform: translate(0px , -3px );
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.823);
+    transition: transform .3s , border 1s;
+}
+
+/*Nesta parte configuramos o tamanho que tera as imagens comocadas nos linls , e utilizamos o border radius em 50% para que conseguimos deixar em formato de circulo , e adicionamos tambem alem da margin de 15 px para dar uma separada nos elementos , adicionamos uma sobra inicial bem discreta*/
+section#redes-sociais img {
+    width: 50px;
+    margin: 15px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.879);
+}
+

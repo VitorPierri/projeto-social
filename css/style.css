@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*Usamos uma configuração geral para que possamos anular todos os paddings e margins que tiverem */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Nesta parte configuramos html e body*/
+html , body {
+    height: 100vh ; /*Altura total do navegador*/
+    width: 100vw ; /*Largura total do navegador*/
+    background-color: black;
+}
+
+/*já nesta parte configuramos apenas o body*/
+body {
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    /*Para colocar o fundo utilizamos novamente o background:url () , colocamos tambem o no-repeat para que a imagem nao se repita para preencher todo o espaço do body e sim que ela ocupe todo o espaço apenas com uma imagem , e para finalizar fizemos o alinhamento pelo top center */
+    background-size: cover
+    /*colocamos a cima o no repeat para que com apenas uma imagem nos conseguissemos prencher todo o espaço do body porem , esta imagem está bem grande e utilizamo o background-size : cover para que ele cubra a tela inteira*/;
+}
+
+
+main {
+    height: 100vh; 
+    /*Altura total do navegador*/
+    position: relative; 
+    /*O posicionamento relativo move um elemento em relação à sua posição padrão na página*/
+}
+
+section#telefone {
+    position: absolute; 
+    /*O posicionamento absoluto move um elemento em relação ao seu ancestral posicionado mais próximo*/
+    top: 50%; 
+    /*Conseguimos configurar o top e bottom*/
+    left: 50%;
+     /*Conseguimos configurar o left e rigth*/
+    transform: translate(-50%, -50%); 
+    /*A função CSS translate() reposiciona um elemento na direção horizontal e/ou vertica*/
+    height: 627px;
+    width: 311px;
+    background: url('../imagens/frame-iphone.png') no-repeat;
+    /*Para colocar o iphone neste utilizamos o background url e colocamos o no repeat para que a imagem nao se repita para prencher todo o espaço desta <section>*/
+}

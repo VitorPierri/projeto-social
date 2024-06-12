@@ -1,20 +1,24 @@
 @charset "UTF-8";
 
+/*Nesta parte zeramos os paddins e margins para ficar tudo bem destribuido*/
 * {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Essa função , webki scrollbar eu nao conhecia muito nao mas sei que serve para tirar a scroll bar*/
 ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
 }
 
+/*colocamos a imagem no valor de 100% da view width*/
 img {
     width: 100vw;
 }
 
+/*estilizamos o link*/
 a {
     display: block;
     background-color: darkred;
@@ -25,6 +29,7 @@ a {
     color: white;
 }
 
+/*Nesta parte utilizamos o hover para dar uma função a ele quando passarmos o mouse em cima */
 a:hover {
     color: black;
     background-color: red;
